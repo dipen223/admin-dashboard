@@ -23,13 +23,55 @@ body{
     grid-template-rows:60px 1fr;
     grid-template-areas: "sidebar header"
                          "sidebar main-content";
-    
 }
 
 .sidebar{
     grid-area:sidebar;
-    border:1px solid red
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    gap:60px;
+    background-color: #1992d4;
+    color:#fff;
+    padding:1.1rem 1.7rem;
 }
+
+.sidebar h2{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.dashboard-row{
+    display:flex;
+    align-items: center;
+    gap:15px;
+}
+.dashboard-row h2{
+    font-weight:bold;
+    font-size:1.7rem;
+}
+.dashboard-row svg{
+    width:45px;
+    height:50px;
+    fill:#fff;
+
+}
+.nav-items{
+    display:flex;
+    flex-direction: column;
+    gap:20px
+
+}
+.nav-items li{
+    list-style: none;
+    
+}
+.nav-item{
+    display:flex;
+    align-items: center;
+    gap:20px;
+}
+
 
 .header{
     grid-area:header;
@@ -40,4 +82,12 @@ body{
     grid-area:main-content;
     border:1px solid blue;
 }
+.primary-nav svg , .secondary-nav svg{
+    width: 25px;
+    height: 25px;
+    fill: #fff;
+}
 
+.primary-nav{
+    margin-bottom:25px;
+}
