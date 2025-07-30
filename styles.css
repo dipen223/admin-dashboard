@@ -203,7 +203,6 @@ img[name="profile-pic"]{
 }
 
 .projects-container .project{
-    /* border:1px solid red; */
     padding:0.85rem 1rem;
     background-color: #fff;
     border-left:6px solid orange;
@@ -217,8 +216,8 @@ img[name="profile-pic"]{
 }
 
 .project svg{
-    width:35px;
-    height:35px;
+    width:25px;
+    height:25px;
 }
 
 .project a {
@@ -257,4 +256,11 @@ img[name="profile-pic"]{
     display: flex;
     flex-direction: column;
     gap:12px;
+}
+
+.icons-container{
+    display:flex;
+    justify-content: flex-end;
+    gap:12px;
+    align-items: flex-end;
 }
