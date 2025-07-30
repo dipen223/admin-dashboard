@@ -34,6 +34,8 @@ body{
     background-color: #1992d4;
     color:#fff;
     padding:1.1rem 1.7rem;
+    position:sticky;
+    top:0;
 }
 
 .sidebar h2{
@@ -75,6 +77,9 @@ body{
 
 .header{
     grid-area:header;
+    position: sticky;
+    top:0;
+    /* z-index: 1000; */
 
 }
 
