@@ -80,6 +80,11 @@ body{
 
 .main-content{
     grid-area:main-content;
+    display:grid;
+    grid-template-columns:3fr 1fr;
+    background-color: #e2e8f0;
+    padding:1rem 1.2rem;
+
 }
 .primary-nav svg , .secondary-nav svg{
     width: 25px;
@@ -183,4 +188,34 @@ img[name="profile-pic"]{
 
 .btn-container button:hover{
    opacity:0.8;
+}
+
+.projects-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.projects-container .project{
+    /* border:1px solid red; */
+    padding:0.85rem 1rem;
+    background-color: #fff;
+    border-left:6px solid orange;
+    border-radius:6px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin-top:12px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    
+}
+
+.project svg{
+    width:35px;
+    height:35px;
+}
+
+.project a {
+    text-decoration: none;
+    color:black;
 }
